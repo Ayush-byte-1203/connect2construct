@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Contractor Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>ContractorHub</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contractors" class="nav-link">Contractors</a></li>
+                    <li><a href="#laborers" class="nav-link">Laborers</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Professional Construction Services</h1>
+                        <p class="hero-subtitle">Connect with skilled contractors and laborers for your construction projects</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Get Started</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Contractors</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Services</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Services -->
+            <section class="featured-services">
+                <div class="container">
+                    <h2 class="section-title">Featured Services</h2>
+                    <div class="services-grid" id="featured-services-grid">
+                        <!-- Services will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Contractors -->
+            <section class="featured-contractors">
+                <div class="container">
+                    <h2 class="section-title">Featured Contractors</h2>
+                    <div class="contractors-grid" id="featured-contractors-grid">
+                        <!-- Contractors will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <div class="container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Quote</option>
+                                <option value="support">Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page">
+            <div class="container">
+                <h1 class="page-title">Our Services</h1>
+                
+                <div class="services-filters">
+                    <div class="filter-group">
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <input type="text" id="search-services" placeholder="Search services...">
+                    </div>
+                </div>
+
+                <div class="services-grid" id="services-grid">
+                    <!-- Services will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contractors Page -->
+        <section id="contractors" class="page">
+            <div class="container">
+                <h1 class="page-title">Our Contractors</h1>
+                
+                <div class="contractors-filters">
+                    <div class="filter-group">
+                        <select id="specialty-filter">
+                            <option value="">All Specialties</option>
+                            <option value="electrical">Electrical</option>
+                            <option value="plumbing">Plumbing</option>
+                            <option value="carpentry">Carpentry</option>
+                            <option value="roofing">Roofing</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select id="location-filter">
+                            <option value="">All Locations</option>
+                            <option value="new-york">New York</option>
+                            <option value="los-angeles">Los Angeles</option>
+                            <option value="chicago">Chicago</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contractors-grid" id="contractors-grid">
+                    <!-- Contractors will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Laborers Page -->
+        <section id="laborers" class="page">
+            <div class="container">
+                <h1 class="page-title">Available Laborers</h1>
+                
+                <div class="laborers-filters">
+                    <div class="filter-group">
+                        <select id="laborer-specialty-filter">
+                            <option value="">All Specialties</option>
+                            <option value="general">General Labor</option>
+                            <option value="masonry">Masonry</option>
+                            <option value="painting">Painting</option>
+                            <option value="concrete">Concrete</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="available-only"> Available Only
+                        </label>
+                    </div>
+                </div>
+
+                <div class="laborers-grid" id="laborers-grid">
+                    <!-- Laborers will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Page -->
+        <section id="portfolio" class="page">
+            <div class="container">
+                <h1 class="page-title">Our Portfolio</h1>
+                
+                <div class="portfolio-filters">
+                    <div class="filter-group">
+                        <select id="contractor-filter">
+                            <option value="">All Contractors</option>
+                            <!-- Will be populated dynamically -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Portfolio will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="container">
+                <h1 class="page-title">About Us</h1>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Your Trusted Construction Partner</h2>
+                        <p>We connect property owners with skilled contractors and laborers, making construction projects easier and more efficient.</p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>To provide a comprehensive platform that brings together the best construction professionals and clients, ensuring quality work and satisfaction.</p>
+                        
+                        <h3>Why Choose Us?</h3>
+                        <ul>
+                            <li>Verified and experienced contractors</li>
+                            <li>Comprehensive service offerings</li>
+                            <li>24/7 customer support</li>
+                            <li>Competitive pricing</li>
+                            <li>Quality guarantee</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1541976590-713941681591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Construction team">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ContractorHub</h3>
+                    <p>Your trusted construction partner</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contractors">Contractors</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@contractorhub.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ContractorHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Modal for contractor details -->
+    <div id="contractor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="contractor-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
