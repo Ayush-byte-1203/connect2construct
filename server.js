@@ -17,134 +17,218 @@ const storage = {
     services: [
         {
             id: 1,
-            name: "Home Renovation",
-            description: "Complete home renovation services including kitchen, bathroom, and living spaces",
+            name: "Foundation Work",
+            description: "Professional foundation services including excavation, concrete pouring, and structural support.",
             category: "residential",
-            price: 15000
+            price: 5000
         },
         {
             id: 2,
-            name: "Office Building Construction",
-            description: "Professional office building construction with modern amenities",
-            category: "commercial",
-            price: 250000
+            name: "Framing & Structure",
+            description: "Expert framing services for residential and commercial structures with quality materials.",
+            category: "residential",
+            price: 8000
         },
         {
             id: 3,
-            name: "Industrial Facility Setup",
-            description: "Complete industrial facility construction and setup",
-            category: "industrial",
-            price: 500000
-        },
-        {
-            id: 4,
-            name: "Kitchen Remodeling",
-            description: "Modern kitchen remodeling with custom cabinets and appliances",
-            category: "residential",
-            price: 25000
-        },
-        {
-            id: 5,
-            name: "Retail Store Design",
-            description: "Custom retail store design and construction",
-            category: "commercial",
-            price: 75000
-        },
-        {
-            id: 6,
-            name: "Warehouse Construction",
-            description: "Large-scale warehouse construction and logistics setup",
-            category: "industrial",
-            price: 350000
-        },
-        {
-            id: 7,
-            name: "Bathroom Renovation",
-            description: "Complete bathroom renovation with modern fixtures",
+            name: "Roofing Services",
+            description: "Complete roofing solutions including installation, repair, and maintenance services.",
             category: "residential",
             price: 12000
         },
         {
+            id: 4,
+            name: "Electrical & Plumbing",
+            description: "Licensed electrical and plumbing services for all construction projects.",
+            category: "residential",
+            price: 3500
+        },
+        {
+            id: 5,
+            name: "Interior Finishing",
+            description: "High-quality interior finishing including drywall, painting, and flooring.",
+            category: "residential",
+            price: 6500
+        },
+        {
+            id: 6,
+            name: "Kitchen Remodeling",
+            description: "Complete kitchen renovation with custom cabinets, countertops, and modern appliances.",
+            category: "residential",
+            price: 25000
+        },
+        {
+            id: 7,
+            name: "Bathroom Renovation",
+            description: "Complete bathroom renovation with modern fixtures, tiling, and plumbing.",
+            category: "residential",
+            price: 15000
+        },
+        {
             id: 8,
-            name: "Restaurant Buildout",
-            description: "Complete restaurant construction and kitchen setup",
+            name: "Office Buildings",
+            description: "Complete commercial office construction and renovation services.",
             category: "commercial",
-            price: 125000
+            price: 50000
+        },
+        {
+            id: 9,
+            name: "Retail Spaces",
+            description: "Specialized retail construction and tenant improvement services.",
+            category: "commercial",
+            price: 25000
+        },
+        {
+            id: 10,
+            name: "Restaurant Build-out",
+            description: "Complete restaurant construction with commercial kitchen and dining areas.",
+            category: "commercial",
+            price: 75000
+        },
+        {
+            id: 11,
+            name: "Warehouses & Distribution",
+            description: "Large-scale warehouse and distribution center construction.",
+            category: "industrial",
+            price: 75000
+        },
+        {
+            id: 12,
+            name: "Manufacturing Facilities",
+            description: "Industrial manufacturing facility construction and setup.",
+            category: "industrial",
+            price: 100000
         }
     ],
     
     contractors: [
         {
             id: 1,
-            name: "John Smith",
-            specialty: "General Construction",
-            location: "New York, NY",
-            rating: 4.8,
-            experience: 15,
-            email: "john.smith@email.com",
+            name: "Michael Thompson",
+            email: "michael@buildpro.com",
             phone: "(555) 123-4567",
-            bio: "Experienced general contractor with 15+ years in residential and commercial construction.",
-            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+            specialty: "General Contractor",
+            description: "20+ years experience in residential and commercial construction. Specializing in custom homes and renovations.",
+            experience: "20+ years experience",
+            location: "Downtown District",
+            rating: 4.9,
+            reviewCount: 127,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Experienced general contractor with 20+ years in residential and commercial construction. Specializing in custom homes and renovations with a focus on quality and customer satisfaction.",
+            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
         },
         {
             id: 2,
-            name: "Sarah Johnson",
-            specialty: "Electrical Work",
-            location: "Los Angeles, CA",
-            rating: 4.9,
-            experience: 12,
-            email: "sarah.johnson@email.com",
+            name: "Sarah Rodriguez",
+            email: "sarah@electropro.com",
             phone: "(555) 234-5678",
-            bio: "Licensed electrician specializing in residential and commercial electrical systems.",
-            avatar: "https://images.unsplash.com/photo-1494790108755-2616b69a2a7e?w=150&h=150&fit=crop&crop=face"
+            specialty: "Electrical Contractor",
+            description: "Expert electrical contractor specializing in residential and commercial electrical systems, smart home installations.",
+            experience: "15+ years experience",
+            location: "North District",
+            rating: 5.0,
+            reviewCount: 89,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Licensed electrician specializing in residential and commercial electrical systems. Expert in smart home technology and energy-efficient solutions.",
+            avatar: "https://images.unsplash.com/photo-1494790108755-2616b69a2a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
         },
         {
             id: 3,
-            name: "Mike Davis",
-            specialty: "Plumbing",
-            location: "Chicago, IL",
-            rating: 4.7,
-            experience: 20,
-            email: "mike.davis@email.com",
+            name: "David Chen",
+            email: "david@plumbpro.com",
             phone: "(555) 345-6789",
-            bio: "Master plumber with expertise in both residential and commercial plumbing systems.",
-            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+            specialty: "Plumbing Contractor",
+            description: "Master plumber with expertise in residential, commercial plumbing systems, and emergency repairs.",
+            experience: "18+ years experience",
+            location: "South District",
+            rating: 4.8,
+            reviewCount: 156,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Master plumber with expertise in both residential and commercial plumbing systems. Specializing in new construction and complex renovations.",
+            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
         },
         {
             id: 4,
             name: "Emily Wilson",
-            specialty: "Carpentry",
-            location: "Seattle, WA",
-            rating: 4.6,
-            experience: 10,
-            email: "emily.wilson@email.com",
+            email: "emily@carpentrypro.com",
             phone: "(555) 456-7890",
-            bio: "Skilled carpenter specializing in custom woodwork and cabinetry.",
-            avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+            specialty: "Carpentry Contractor",
+            description: "Master carpenter specializing in custom woodwork, cabinetry, and finish carpentry.",
+            experience: "12+ years experience",
+            location: "West District",
+            rating: 4.7,
+            reviewCount: 78,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Skilled carpenter specializing in custom woodwork and cabinetry. Known for attention to detail and high-quality craftsmanship.",
+            avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
         },
         {
             id: 5,
-            name: "David Brown",
-            specialty: "Roofing",
-            location: "Miami, FL",
-            rating: 4.8,
-            experience: 18,
-            email: "david.brown@email.com",
+            name: "James Rodriguez",
+            email: "james@roofingpro.com",
             phone: "(555) 567-8901",
-            bio: "Professional roofer with experience in all types of roofing systems.",
-            avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+            specialty: "Roofing Contractor",
+            description: "Professional roofing contractor with experience in all types of roofing systems and materials.",
+            experience: "16+ years experience",
+            location: "East District",
+            rating: 4.9,
+            reviewCount: 134,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Professional roofer with experience in all types of roofing systems. Specializing in residential and commercial roofing projects.",
+            avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
         },
         {
             id: 6,
             name: "Lisa Anderson",
-            specialty: "Interior Design",
-            location: "Austin, TX",
-            rating: 4.9,
-            experience: 14,
-            email: "lisa.anderson@email.com",
+            email: "lisa@interiorpro.com",
             phone: "(555) 678-9012",
-            bio: "Creative interior designer with a focus on modern and sustainable design.",
-            avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+            specialty: "Interior Design Contractor",
+            description: "Creative interior designer with a focus on modern and sustainable design solutions.",
+            experience: "14+ years experience",
+            location: "Central District",
+            rating: 4.8,
+            reviewCount: 92,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Creative interior designer with a focus on modern and sustainable design. Specializing in residential and commercial interior projects.",
+            avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        {
+            id: 7,
+            name: "Robert Martinez",
+            email: "robert@masonrypro.com",
+            phone: "(555) 789-0123",
+            specialty: "Masonry Contractor",
+            description: "Expert masonry contractor specializing in brick, stone, and concrete work.",
+            experience: "22+ years experience",
+            location: "Downtown District",
+            rating: 4.9,
+            reviewCount: 167,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Expert masonry contractor with over 22 years of experience in brick, stone, and concrete work. Known for precision and durability.",
+            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+        },
+        {
+            id: 8,
+            name: "Jennifer Kim",
+            email: "jennifer@paintingpro.com",
+            phone: "(555) 890-1234",
+            specialty: "Painting Contractor",
+            description: "Professional painting contractor specializing in interior and exterior painting services.",
+            experience: "10+ years experience",
+            location: "North District",
+            rating: 4.7,
+            reviewCount: 85,
+            isLicensed: true,
+            isInsured: true,
+            bio: "Professional painting contractor with expertise in both interior and exterior painting. Specializing in residential and commercial projects.",
+            avatar: "https://images.unsplash.com/photo-1494790108755-2616b69a2a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
         }
     ],
     
@@ -152,44 +236,90 @@ const storage = {
         {
             id: 1,
             name: "Carlos Martinez",
-            specialty: "General Labor",
-            hourlyRate: 25,
-            available: true
+            specialty: "Master Carpenter",
+            experience: "12+ years experience",
+            hourlyRate: 45,
+            rating: 4.9,
+            reviewCount: 67,
+            available: true,
+            profileImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
         },
         {
             id: 2,
-            name: "Robert Taylor",
-            specialty: "Masonry",
-            hourlyRate: 35,
-            available: false
+            name: "Jennifer Liu",
+            specialty: "Electrical Technician",
+            experience: "8+ years experience",
+            hourlyRate: 52,
+            rating: 5.0,
+            reviewCount: 43,
+            available: true,
+            profileImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
         },
         {
             id: 3,
-            name: "James Wilson",
-            specialty: "Painting",
-            hourlyRate: 30,
-            available: true
+            name: "Robert Johnson",
+            specialty: "Plumbing Specialist",
+            experience: "15+ years experience",
+            hourlyRate: 48,
+            rating: 4.8,
+            reviewCount: 91,
+            available: true,
+            profileImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
         },
         {
             id: 4,
             name: "Maria Garcia",
-            specialty: "Concrete",
-            hourlyRate: 40,
-            available: true
+            specialty: "Concrete Specialist",
+            experience: "10+ years experience",
+            hourlyRate: 42,
+            rating: 4.7,
+            reviewCount: 54,
+            available: false,
+            profileImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
         },
         {
             id: 5,
-            name: "Thomas Johnson",
+            name: "Thomas Wilson",
             specialty: "General Labor",
+            experience: "6+ years experience",
             hourlyRate: 28,
-            available: false
+            rating: 4.6,
+            reviewCount: 32,
+            available: true,
+            profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
         },
         {
             id: 6,
             name: "Anna Rodriguez",
-            specialty: "Painting",
+            specialty: "Painting Specialist",
+            experience: "9+ years experience",
             hourlyRate: 32,
-            available: true
+            rating: 4.8,
+            reviewCount: 78,
+            available: true,
+            profileImage: "https://images.unsplash.com/photo-1494790108755-2616b69a2a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+        },
+        {
+            id: 7,
+            name: "Kevin Brown",
+            specialty: "Drywall Specialist",
+            experience: "11+ years experience",
+            hourlyRate: 38,
+            rating: 4.7,
+            reviewCount: 65,
+            available: false,
+            profileImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+        },
+        {
+            id: 8,
+            name: "Lisa Davis",
+            specialty: "Flooring Specialist",
+            experience: "7+ years experience",
+            hourlyRate: 35,
+            rating: 4.9,
+            reviewCount: 46,
+            available: true,
+            profileImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
         }
     ],
     
@@ -197,56 +327,90 @@ const storage = {
         {
             id: 1,
             title: "Modern Family Home",
-            description: "Complete renovation of a 3-bedroom family home with modern amenities",
-            contractorName: "John Smith",
+            description: "3,500 sq ft modern home with sustainable features and smart home integration.",
+            category: "Custom Residential Build",
             contractorId: 1,
+            contractorName: "Michael Thompson",
+            completionYear: 2024,
             completedDate: "2024-01-15",
-            image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop"
+            image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
         },
         {
             id: 2,
-            title: "Downtown Office Building",
-            description: "New construction of a 10-story office building in downtown area",
-            contractorName: "Sarah Johnson",
+            title: "Corporate Office Renovation",
+            description: "Complete renovation of 15,000 sq ft office space with modern amenities.",
+            category: "Commercial Office Space",
             contractorId: 2,
+            contractorName: "Sarah Rodriguez",
+            completionYear: 2024,
             completedDate: "2024-02-20",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop"
+            image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
         },
         {
             id: 3,
-            title: "Luxury Apartment Complex",
-            description: "High-end apartment complex with 50 units and modern amenities",
-            contractorName: "Mike Davis",
+            title: "Industrial Warehouse",
+            description: "50,000 sq ft warehouse facility with advanced logistics systems.",
+            category: "Distribution Center",
             contractorId: 3,
+            contractorName: "David Chen",
+            completionYear: 2024,
             completedDate: "2024-03-10",
-            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop"
+            image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
         },
         {
             id: 4,
-            title: "Restaurant Renovation",
-            description: "Complete renovation of a downtown restaurant with new kitchen",
-            contractorName: "Emily Wilson",
-            contractorId: 4,
+            title: "Kitchen Remodel",
+            description: "Complete kitchen transformation with premium materials and appliances.",
+            category: "Luxury Kitchen Renovation",
+            contractorId: 1,
+            contractorName: "Michael Thompson",
+            completionYear: 2024,
             completedDate: "2024-01-30",
-            image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop"
+            image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
         },
         {
             id: 5,
-            title: "Industrial Warehouse",
-            description: "Construction of a 50,000 sq ft industrial warehouse facility",
-            contractorName: "David Brown",
-            contractorId: 5,
+            title: "Spa Bathroom",
+            description: "Luxury spa-style bathroom with premium finishes and smart features.",
+            category: "Master Bathroom Remodel",
+            contractorId: 2,
+            contractorName: "Sarah Rodriguez",
+            completionYear: 2024,
             completedDate: "2024-02-25",
-            image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop"
+            image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
         },
         {
             id: 6,
-            title: "Retail Shopping Center",
-            description: "New shopping center with 20 retail spaces and parking",
-            contractorName: "Lisa Anderson",
-            contractorId: 6,
+            title: "Restaurant Build-out",
+            description: "Complete restaurant build-out with commercial kitchen and dining areas.",
+            category: "Restaurant Construction",
+            contractorId: 3,
+            contractorName: "David Chen",
+            completionYear: 2024,
             completedDate: "2024-03-05",
-            image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop"
+            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+        },
+        {
+            id: 7,
+            title: "Luxury Apartment Complex",
+            description: "High-end apartment complex with 50 units and modern amenities.",
+            category: "Multi-Family Residential",
+            contractorId: 4,
+            contractorName: "Emily Wilson",
+            completionYear: 2024,
+            completedDate: "2024-02-15",
+            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+        },
+        {
+            id: 8,
+            title: "Retail Shopping Center",
+            description: "New shopping center with 20 retail spaces and parking facilities.",
+            category: "Commercial Retail",
+            contractorId: 5,
+            contractorName: "James Rodriguez",
+            completionYear: 2024,
+            completedDate: "2024-03-20",
+            image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
         }
     ],
     
